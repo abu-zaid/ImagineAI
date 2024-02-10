@@ -1,6 +1,7 @@
 // Hero.js
 import Link from "next/link";
 import React from "react";
+import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
@@ -13,9 +14,7 @@ const Hero = () => {
           Generate code, images, and chat effortlessly.
         </p>
         <Link href="/dashboard">
-          <button className="bg-purple-100 hover:bg-purple-200 text-black py-2 px-6 rounded-lg shadow-lg transition">
-            Get Started
-          </button>
+          <Button variant="secondary">Get Started</Button>
         </Link>
       </div>
     </section>
