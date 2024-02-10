@@ -6,7 +6,7 @@ import MobileNav from "./mobilenav";
 
 const Header = () => {
   return (
-    <header className="bg-purple-gradient text-white py-4">
+    <header className="bg-purple-gradient text-white py-4 sticky top-0 z-10">
       <div className="container mx-auto flex justify-between items-center px-4">
         <Link href="/">
           <h1 className="text-2xl font-bold">Imagine AI</h1>
