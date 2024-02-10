@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
+import MobileNav from "./mobilenav";
 
 const Header = () => {
   return (
@@ -10,21 +11,24 @@ const Header = () => {
         <Link href="/">
           <h1 className="text-2xl font-bold">Imagine AI</h1>
         </Link>
+        <nav className="flex md:hidden">
+          <MobileNav />
+        </nav>
         <nav className="hidden md:flex">
           <ul className="flex">
             <li className="ml-4">
-            <Link href="/features">
-                <Button variant='ghost'>Features</Button>
+              <Link href="/features">
+                <Button variant="ghost">Features</Button>
               </Link>
             </li>
             <li className="ml-4">
               <Link href="/about">
-                <Button variant='ghost'>About</Button>
+                <Button variant="ghost">About</Button>
               </Link>
             </li>
             <li className="ml-4">
-            <Link href="/contact">
-                <Button variant='ghost'>Contact</Button>
+              <Link href="/contact">
+                <Button variant="ghost">Contact</Button>
               </Link>
             </li>
           </ul>
