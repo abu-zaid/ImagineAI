@@ -5,7 +5,7 @@ import Hero from "@/components/hero";
 
 export default function Home() {
   return (
-    <div className="h-full flex flex-col bg-gradient-to-b from-blue-500 to-purple-600 min-h-screen overflow-scroll">
+    <div className="h-full flex flex-col bg-gradient-to-b from-blue-500 to-purple-600 min-h-screen overflow-y-auto">
       <Header />
       <Hero />
       <FeatureSection />

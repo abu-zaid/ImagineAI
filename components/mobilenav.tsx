@@ -2,12 +2,9 @@ import {
   Sheet,
   SheetContent,
   SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Link from "next/link";
-import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
 
 const MobileNav = () => {
@@ -22,23 +19,23 @@ const MobileNav = () => {
             <ul className="flex flex-col gap-4 mt-10">
               <li className="ml-4">
                 <Link href="/features">
-                  <Button variant="link" className="w-full text-white">
+                  <div className="w-full px-4 font-semibold h-10 items-center flex justify-center hover:bg-slate-200 text-center text-white rounded-lg hover:text-gray-800 transition ">
                     Features
-                  </Button>
+                  </div>
                 </Link>
               </li>
               <li className="ml-4">
                 <Link href="/about">
-                  <Button variant="link" className="w-full text-white">
+                  <div className="w-full px-4 font-semibold h-10 items-center flex justify-center hover:bg-slate-200 text-center text-white rounded-lg hover:text-gray-800 transition ">
                     About
-                  </Button>
+                  </div>
                 </Link>
               </li>
               <li className="ml-4">
                 <Link href="/contact">
-                  <Button variant="link" className="w-full text-white">
+                  <div className="w-full px-4 font-semibold h-10 items-center flex justify-center hover:bg-slate-200 text-center text-white rounded-lg hover:text-gray-800 transition ">
                     Contact
-                  </Button>
+                  </div>
                 </Link>
               </li>
             </ul>
